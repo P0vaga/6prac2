@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестування логічного елемента XOR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        select {
+            width: 100%;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Перевірка знання таблиці істинності логічного елемента XOR</h1>
+    <table>
+        <tr>
+            <th>Логічний вираз</th>
+            <th>Можливі відповіді</th>
+        </tr>
+        <tr>
+            <td>0 XOR 0</td>
+            <td>
+                <select id="xor00">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>0 XOR 1</td>
+            <td>
+                <select id="xor01">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1 XOR 0</td>
+            <td>
+                <select id="xor10">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>1 XOR 1</td>
+            <td>
+                <select id="xor11">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button id="checkButton">Перевірити відповіді</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
